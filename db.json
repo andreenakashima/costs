@@ -12,17 +12,6 @@
       "id": 1
     },
     {
-      "name": "teste 2",
-      "budget": "15000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
       "name": "Yamaha Bass",
       "budget": "4000",
       "category": {
@@ -43,17 +32,6 @@
       "cost": 0,
       "services": [],
       "id": 4
-    },
-    {
-      "name": "Yamaha Bass",
-      "budget": "51111",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 5
     }
   ],
   "categories": [
