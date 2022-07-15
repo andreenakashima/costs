@@ -11,7 +11,9 @@ function Project() {
 
     const { id } = useParams()
     const [ project, setProject ] = useState([])
+    const [ message, setMessage ] = useState([])
     const [ showProjectForm, setShowProjectForm ] = useState( false )
+    const [ showServiceForm, setShowServiceForm ] = useState( false )
 
     useEffect(() => {
         setTimeout(() => {
@@ -32,7 +34,13 @@ function Project() {
         setShowProjectForm(!showProjectForm)
     }
 
+    function toggleServiceForm() {
+        setShowServiceForm(!showServiceForm)
+    }
+
     function editPost( project ) {
+        setMessage('')
+
         // if(project.budget < project.cost) {
             
         // }
@@ -88,6 +96,19 @@ function Project() {
                             </div>
                         )}
                     </div>
+                    <div className={ styles.service_form_container }>
+                        <h2>Adicione um serviço: </h2>
+                        <button className={ styles.btn } onClick={ toggleServiceForm }>
+                            { !showServiceForm ? 'Adicionar serviço' : 'Fechar' }
+                        </button>
+                        <div className={ styles.project_info }>
+                            {showServiceForm && <div>Formulario do servico</div>}
+                        </div>
+                    </div>
+                    <h2>Serviços</h2>
+                    <Container customClass="start">
+                        <p>Itens de Serviço</p>
+                    </Container>
                 </Container>
             </div>
         ) : (
