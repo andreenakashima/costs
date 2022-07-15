@@ -115,7 +115,7 @@ function Project() {
         .then((data) => {
             setProject( projectUpdated )
             setServices( servicesUpdated )
-            setMessage( 'Serviço removido com sucesso' )
+            setMessage( 'Serviço removido com sucesso!' )
             setType( 'success' )
         })
         .catch((err) => console.log(err))
