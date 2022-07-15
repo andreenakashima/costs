@@ -8,8 +8,8 @@ import styles from './ProjectForm.module.css'
 
 function ProjectForm({ handleSubmit, btnText, projectData }) {
 
-    const [ categories, setCategories ] = useState([])
     const [ project, setProject ] = useState( projectData || {} )
+    const [ categories, setCategories ] = useState([])
 
     useEffect(() => {
         fetch('http://localhost:5000/categories', {
@@ -25,23 +25,24 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
 
     const submit = (e) => {
         e.preventDefault()
-        handleSubmit( project )
+        handleSubmit(project)
     }
 
     function handleChange(e) {
-        setProject({ ...project, [ e.target.name ] : e.target.value })
+        setProject({ ...project, [e.target.name]: e.target.value })
     }
 
     function handleCategory(e) {
-        setProject({ ...project, 
-            category:{
+        setProject({ 
+            ...project, 
+            category: {
                 id: e.target.value,
-                name: e.target.options[ e.target.selectedIndex ].text
+                name: e.target.options[e.target.selectedIndex].text
         }})
     }
 
     return (
-        <form onSubmit={ submit } className={ styles.form }>
+        <form onSubmit={submit} className={ styles.form }>
             <Input 
                 type="text" 
                 text="Nome do projeto" 
@@ -50,7 +51,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
                 handleOnChange={ handleChange }
                 value={ project.name ? project.name : '' }
             />
-            
+                        
             <Input 
                 type="number" 
                 text="Orçamento do projeto" 
