@@ -18,7 +18,7 @@
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 3000,
+      "cost": 5000,
       "services": [
         {
           "name": "Teste",
@@ -37,6 +37,12 @@
           "cost": "1000",
           "description": "Faça alguma coisa",
           "id": "399fea9f-ff34-4fe0-a0d7-984ce8986005"
+        },
+        {
+          "name": "Teste Quasi qui sit minus mollitia ducimus dolores pariatur.",
+          "cost": "2000",
+          "description": "Faça alguma coisa",
+          "id": "0e3cdd02-128e-45cf-9cb2-98cf99d5a6bd"
         }
       ],
       "id": 3
