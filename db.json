@@ -13,13 +13,32 @@
     },
     {
       "name": "Yamaha Bass",
-      "budget": "4000",
+      "budget": "50000",
       "category": {
         "id": "4",
         "name": "Planejamento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 3000,
+      "services": [
+        {
+          "name": "Teste",
+          "cost": "1000",
+          "description": "Faça alguma coisa",
+          "id": "d8a655c5-62e1-4f64-ab83-69ade15f1894"
+        },
+        {
+          "name": "Teste",
+          "cost": "1000",
+          "description": "Faça alguma coisa",
+          "id": "d8a655c5-62e1-4f64-ab83-69ade15f1894"
+        },
+        {
+          "name": "Teste",
+          "cost": "1000",
+          "description": "Faça alguma coisa",
+          "id": "399fea9f-ff34-4fe0-a0d7-984ce8986005"
+        }
+      ],
       "id": 3
     },
     {
